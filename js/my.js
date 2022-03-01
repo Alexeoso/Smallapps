@@ -1,3 +1,5 @@
+// "use strict"
+
 var clickSuggestion1 = document.querySelector(".choice__slider_1");
 var clickSuggestion2 = document.querySelector(".choice__slider_2");
 var clickSuggestion3 = document.querySelector(".choice__slider_3");
@@ -40,11 +42,11 @@ function previousSuggestion() {
     choiceimg4.style.backgroundImage= "url(img/svg/rocket.svg)";
     choiceimg5.style.backgroundImage= "url(img/svg/umbrella.svg)";//Все иконки серые
 
-//     suggestionEmage1.style.display = "none";
-//     suggestionEmage2.style.display = "none";
-//     suggestionEmage3.style.display = "none";
-//     suggestionEmage4.style.display = "none";
-//     suggestionEmage5.style.display = "none"; //Информаия справа выключена
+    suggestionEmage1.style.display = "none";
+    suggestionEmage2.style.display = "none";
+    suggestionEmage3.style.display = "none";
+    suggestionEmage4.style.display = "none";
+    suggestionEmage5.style.display = "none"; //Информаия справа выключена
 }; // Отключены все
 
 // -----------------------------------------------------
