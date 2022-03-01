@@ -40,11 +40,11 @@ function previousSuggestion() {
     choiceimg4.style.backgroundImage= "url(img/svg/rocket.svg)";
     choiceimg5.style.backgroundImage= "url(img/svg/umbrella.svg)";//Все иконки серые
 
-    suggestionEmage1.style.display = "none";
-    suggestionEmage2.style.display = "none";
-    suggestionEmage3.style.display = "none";
-    suggestionEmage4.style.display = "none";
-    suggestionEmage5.style.display = "none"; //Информаия справа выключена
+//     suggestionEmage1.style.display = "none";
+//     suggestionEmage2.style.display = "none";
+//     suggestionEmage3.style.display = "none";
+//     suggestionEmage4.style.display = "none";
+//     suggestionEmage5.style.display = "none"; //Информаия справа выключена
 }; // Отключены все
 
 // -----------------------------------------------------
