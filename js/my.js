@@ -1,5 +1,3 @@
-// "use strict"
-
 var clickSuggestion1 = document.querySelector(".choice__slider_1");
 var clickSuggestion2 = document.querySelector(".choice__slider_2");
 var clickSuggestion3 = document.querySelector(".choice__slider_3");
@@ -24,7 +22,7 @@ var suggestionEmage5 = document.querySelector(".two-block__suggestion-info_5");
 var choiceTitle = document.querySelectorAll(".choice__title");//Имя в предложении
 
 clickSuggestion1.style.opacity = "1";
-choiceimg1.style.backgroundImage= "url(img/svg/a-heart-green.svg)";
+choiceimg1.style.backgroundImage= "url(./img/svg/a-heart-green.svg)";
 // choiceTitle[0].style.color = "#000";
 suggestionEmage1.style.display = "block";
 //  Включены по уммолчанию
@@ -57,7 +55,7 @@ choiceClick.addEventListener("click", function (event) {
     if (event.target.closest(".choice__suggestion-1")) {
         previousSuggestion();
         clickSuggestion1.style.opacity = "1";
-        choiceimg1.style.backgroundImage = "url(img/svg/a-heart-green.svg)";
+        choiceimg1.style.backgroundImage = "url(./img/svg/a-heart-green.svg)";
         choiceTitle[4].style = "";
         choiceTitle[3].style = "";
         choiceTitle[2].style = "";
@@ -69,7 +67,7 @@ choiceClick.addEventListener("click", function (event) {
     if (event.target.closest(".choice__suggestion-2")) {
         previousSuggestion();
         clickSuggestion2.style.opacity = "1";
-        choiceimg2.style.backgroundImage = "url(img/svg/briefcase-green.svg)";
+        choiceimg2.style.backgroundImage = "url(./img/svg/briefcase-green.svg)";
         choiceTitle[4].style = "";
         choiceTitle[3].style = "";
         choiceTitle[2].style = "";
@@ -81,7 +79,7 @@ choiceClick.addEventListener("click", function (event) {
     if (event.target.closest(".choice__suggestion-3")) {
         previousSuggestion();
         clickSuggestion3.style.opacity = "1";
-        choiceimg3.style.backgroundImage = "url(img/svg/leaf-green.svg)";
+        choiceimg3.style.backgroundImage = "url(./img/svg/leaf-green.svg)";
         choiceTitle[4].style = "";
         choiceTitle[3].style = "";
         choiceTitle[0].style = "";
@@ -93,7 +91,7 @@ choiceClick.addEventListener("click", function (event) {
     if (event.target.closest(".choice__suggestion-4")) {
         previousSuggestion();
         clickSuggestion4.style.opacity = "1";
-        choiceimg4.style.backgroundImage = "url(img/svg/rocket-green.svg)";
+        choiceimg4.style.backgroundImage = "url(./img/svg/rocket-green.svg)";
         choiceTitle[4].style = "";
         choiceTitle[1].style = "";
         choiceTitle[2].style = "";
@@ -105,7 +103,7 @@ choiceClick.addEventListener("click", function (event) {
     if (event.target.closest(".choice__suggestion-5")) {
         previousSuggestion();
         clickSuggestion5.style.opacity = "1";
-        choiceimg5.style.backgroundImage = "url(img/svg/umbrella-green.svg)";
+        choiceimg5.style.backgroundImage = "url(./img/svg/umbrella-green.svg)";
         choiceTitle[1].style = "";
         choiceTitle[3].style = "";
         choiceTitle[2].style = "";
@@ -115,7 +113,4 @@ choiceClick.addEventListener("click", function (event) {
     };
 
 });
-
-
-
 
