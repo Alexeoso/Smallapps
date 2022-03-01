@@ -35,8 +35,8 @@ function previousSuggestion() {
     clickSuggestion5.style.opacity = "0"; //Прозрачность услайдеро
 
     choiceimg1.style.backgroundImage= "url(./img/svg/a-heart.svg)";
-    choiceimg2.style.backgroundImage= "url(/img/svg/briefcase.svg)";
-    choiceimg3.style.backgroundImage= "url(/img/svg/leaf.svg)";
+    choiceimg2.style.backgroundImage= "url(img/svg/briefcase.svg)";
+    choiceimg3.style.backgroundImage= "url(img/svg/leaf.svg)";
     choiceimg4.style.backgroundImage= "url(./img/svg/rocket.svg)";
     choiceimg5.style.backgroundImage= "url(./img/svg/umbrella.svg)";//Все иконки серые
 
