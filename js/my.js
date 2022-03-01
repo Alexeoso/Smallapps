@@ -22,7 +22,7 @@ var suggestionEmage5 = document.querySelector(".two-block__suggestion-info_5");
 var choiceTitle = document.querySelectorAll(".choice__title");//Имя в предложении
 
 clickSuggestion1.style.opacity = "1";
-choiceimg1.style.backgroundImage= "url(./img/svg/a-heart-green.svg)";
+choiceimg1.style.backgroundImage= "url(img/svg/a-heart-green.svg)";
 // choiceTitle[0].style.color = "#000";
 suggestionEmage1.style.display = "block";
 //  Включены по уммолчанию
@@ -34,11 +34,11 @@ function previousSuggestion() {
     clickSuggestion4.style.opacity = "0";
     clickSuggestion5.style.opacity = "0"; //Прозрачность услайдеро
 
-    choiceimg1.style.backgroundImage= "url(./img/svg/a-heart.svg)";
+    choiceimg1.style.backgroundImage= "url(img/svg/a-heart.svg)";
     choiceimg2.style.backgroundImage= "url(img/svg/briefcase.svg)";
     choiceimg3.style.backgroundImage= "url(img/svg/leaf.svg)";
-    choiceimg4.style.backgroundImage= "url(./img/svg/rocket.svg)";
-    choiceimg5.style.backgroundImage= "url(./img/svg/umbrella.svg)";//Все иконки серые
+    choiceimg4.style.backgroundImage= "url(img/svg/rocket.svg)";
+    choiceimg5.style.backgroundImage= "url(img/svg/umbrella.svg)";//Все иконки серые
 
     suggestionEmage1.style.display = "none";
     suggestionEmage2.style.display = "none";
@@ -55,7 +55,7 @@ choiceClick.addEventListener("click", function (event) {
     if (event.target.closest(".choice__suggestion-1")) {
         previousSuggestion();
         clickSuggestion1.style.opacity = "1";
-        choiceimg1.style.backgroundImage = "url(./img/svg/a-heart-green.svg)";
+        choiceimg1.style.backgroundImage = "url(img/svg/a-heart-green.svg)";
         choiceTitle[4].style = "";
         choiceTitle[3].style = "";
         choiceTitle[2].style = "";
@@ -67,7 +67,7 @@ choiceClick.addEventListener("click", function (event) {
     if (event.target.closest(".choice__suggestion-2")) {
         previousSuggestion();
         clickSuggestion2.style.opacity = "1";
-        choiceimg2.style.backgroundImage = "url(./img/svg/briefcase-green.svg)";
+        choiceimg2.style.backgroundImage = "url(img/svg/briefcase-green.svg)";
         choiceTitle[4].style = "";
         choiceTitle[3].style = "";
         choiceTitle[2].style = "";
@@ -79,7 +79,7 @@ choiceClick.addEventListener("click", function (event) {
     if (event.target.closest(".choice__suggestion-3")) {
         previousSuggestion();
         clickSuggestion3.style.opacity = "1";
-        choiceimg3.style.backgroundImage = "url(./img/svg/leaf-green.svg)";
+        choiceimg3.style.backgroundImage = "url(img/svg/leaf-green.svg)";
         choiceTitle[4].style = "";
         choiceTitle[3].style = "";
         choiceTitle[0].style = "";
@@ -91,7 +91,7 @@ choiceClick.addEventListener("click", function (event) {
     if (event.target.closest(".choice__suggestion-4")) {
         previousSuggestion();
         clickSuggestion4.style.opacity = "1";
-        choiceimg4.style.backgroundImage = "url(./img/svg/rocket-green.svg)";
+        choiceimg4.style.backgroundImage = "url(img/svg/rocket-green.svg)";
         choiceTitle[4].style = "";
         choiceTitle[1].style = "";
         choiceTitle[2].style = "";
@@ -103,7 +103,7 @@ choiceClick.addEventListener("click", function (event) {
     if (event.target.closest(".choice__suggestion-5")) {
         previousSuggestion();
         clickSuggestion5.style.opacity = "1";
-        choiceimg5.style.backgroundImage = "url(./img/svg/umbrella-green.svg)";
+        choiceimg5.style.backgroundImage = "url(img/svg/umbrella-green.svg)";
         choiceTitle[1].style = "";
         choiceTitle[3].style = "";
         choiceTitle[2].style = "";
