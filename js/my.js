@@ -114,3 +114,153 @@ choiceClick.addEventListener("click", function (event) {
 
 });
 
+
+
+
+//_FOUR-BLOCK----------------------------------------
+const fourBlockArrowLeft = document.querySelector(".four-block__arrow-left");
+const fourBlockArrowRight = document.querySelector(".four-block__arrow-right");
+let qqwqw = { qq: fourBlockArrowLeft, ww: fourBlockArrowRight, };
+
+const fourBlockScreen = document.querySelectorAll(".column__screen");
+
+fourBlockArrowLeft.addEventListener("click", function(event) {
+    fourBlockScreen[0].classList.toggle('screen');
+
+    if (fourBlockScreen[0].classList.contains('screen') ) {
+
+        fourBlockScreen[0].firstElementChild.style.display = "none";
+        fourBlockScreen[1].firstElementChild.style.display = "none";
+        fourBlockScreen[2].firstElementChild.style.display = "none";
+
+        fourBlockScreen[0].lastElementChild.style.display = "block";
+        fourBlockScreen[1].lastElementChild.style.display = "block";
+        fourBlockScreen[2].lastElementChild.style.display = "block";
+    } else {
+        fourBlockScreen[0].lastElementChild.style.display = "none";
+        fourBlockScreen[1].lastElementChild.style.display = "none";
+        fourBlockScreen[2].lastElementChild.style.display = "none";
+
+        fourBlockScreen[0].firstElementChild.style.display = "block";
+        fourBlockScreen[1].firstElementChild.style.display = "block";
+        fourBlockScreen[2].firstElementChild.style.display = "block";
+    };
+
+});
+fourBlockArrowRight.addEventListener("click", function(event) {
+    fourBlockScreen[0].classList.toggle('screen');
+
+    if (fourBlockScreen[0].classList.contains('screen') ) {
+
+        fourBlockScreen[0].firstElementChild.style.display = "none";
+        fourBlockScreen[1].firstElementChild.style.display = "none";
+        fourBlockScreen[2].firstElementChild.style.display = "none";
+
+        fourBlockScreen[0].lastElementChild.style.display = "block";
+        fourBlockScreen[1].lastElementChild.style.display = "block";
+        fourBlockScreen[2].lastElementChild.style.display = "block";
+    } else {
+        fourBlockScreen[0].lastElementChild.style.display = "none";
+        fourBlockScreen[1].lastElementChild.style.display = "none";
+        fourBlockScreen[2].lastElementChild.style.display = "none";
+
+        fourBlockScreen[0].firstElementChild.style.display = "block";
+        fourBlockScreen[1].firstElementChild.style.display = "block";
+        fourBlockScreen[2].firstElementChild.style.display = "block";
+    };
+
+});
+
+
+//_SIX-BLOCK----------------------------------------
+const sixBlockSliders = document.querySelector(".six-block__sliders");//РОДИТЕЛЬ
+sixBlockSliders.firstElementChild.style.cssText = 
+    `
+    background-color: #5dca88;
+    transform: scale(1.4, 1.4)
+    `
+;//П УММОЛЧАНИЮ
+
+
+const sixBlockSlider_1 = sixBlockSliders.children[0];
+const sixBlockSlider_2 = sixBlockSliders.children[1];
+const sixBlockSlider_3 = sixBlockSliders.children[2];
+// const sixBlockContent_1 = document.querySelector(".six-block__content_ 1");
+// const sixBlockContent_2 = document.querySelector(".six-block__content_2");
+// const sixBlockContent_3 = document.querySelector(".six-block__content_3");
+const sixBlockContent_1 = document.querySelector(".six-block__content_1");
+const sixBlockContent_2 = document.querySelector(".six-block__content_2");
+const sixBlockContent_3 = document.querySelector(".six-block__content_3");
+function oldStyle_SixBlock() {
+    
+    // sixBlockContent_1.style.display = "none";
+    // sixBlockContent_2.style.display = "none";
+    // sixBlockContent_3.style.display = "none";
+    sixBlockContent_1.style.cssText = `display: none;`;
+    sixBlockContent_2.style.cssText = `display: none;`;
+    sixBlockContent_3.style.cssText = `display: none;`;
+
+    sixBlockSlider_1.style.cssText = `background-color: #8c9494;`;
+    sixBlockSlider_2.style.cssText = `background-color: #8c9494;`;
+    sixBlockSlider_3.style.cssText = `background-color: #8c9494;`;
+
+    
+    
+};//УДАЛЯТЬ ИЗМЕНЕНЕНИЯ.
+
+sixBlockSliders.addEventListener("click", function (event) {
+    if (event.target.closest(".six-block__slide_1")) {
+        oldStyle_SixBlock();
+        sixBlockContent_1.style.cssText = 
+        `display: block; animation-name: whitet;`;
+        sixBlockSliders.firstElementChild.style.cssText =
+            `
+            background-color: #5dca88;
+            transform: scale(1.4, 1.4);
+            `
+        ;
+    };
+    
+    if (event.target.closest(".six-block__slide_2")) {
+        oldStyle_SixBlock();
+        sixBlockContent_2.style.cssText = 
+        ` display: block; animation-name: whitet;`;
+        sixBlockSliders.children[1].style.cssText =
+            `
+            background-color: #5dca88;
+            transform: scale(1.4, 1.4)
+            `
+        ;
+    };
+
+    if (event.target.closest(".six-block__slide_3")) {
+        oldStyle_SixBlock();
+        sixBlockContent_3.style.cssText = 
+        `display: block; animation-name: whitet;`;
+        sixBlockSliders.children[2].style.cssText =
+            `
+            background-color: #5dca88;
+            transform: scale(1.4, 1.4)
+            `
+        ;
+    };
+}) ;
+
+
+
+//_HEADER----------------------------------------
+
+const burger = document.querySelector(".header__burger");
+const headerLeft = document.querySelector(".header__left");
+const headerRight = document.querySelector(".header__right");
+
+burger.addEventListener("click", function(event) {
+    burger.classList.toggle("header__burger_Active");
+
+    if (burger.classList.contains("header__burger_Active")) {
+        headerLeft.style.cssText = `display: none;`;
+        headerRight.style.cssText = `display: flex;`;
+    } else {
+         headerRight.style.cssText = `display: none;`;
+         headerLeft.style.cssText = `display: flex;`;
+     }
