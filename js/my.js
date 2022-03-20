@@ -1,3 +1,6 @@
+"use strict";
+
+
 var clickSuggestion1 = document.querySelector(".choice__slider_1");
 var clickSuggestion2 = document.querySelector(".choice__slider_2");
 var clickSuggestion3 = document.querySelector(".choice__slider_3");
@@ -264,3 +267,5 @@ burger.addEventListener("click", function(event) {
          headerRight.style.cssText = `display: none;`;
          headerLeft.style.cssText = `display: flex;`;
      }
+});
+
